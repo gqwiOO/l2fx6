@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "yy28q0QZY4XpjBhwn7XBQFxUrYeueU9KC7k+Y6y1jMzlqVlD6seVgaYHL0b8htc368uf1bhCU5mHbkqfF9AHsA==",
+  "success": true,
+  "projectFilePath": "C:\\lf2x6_remote_control\\AndroiApp\\AndroiApp\\AndroiApp\\AndroiApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
