@@ -1041,11 +1041,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\lf2x6_remote_control\\AndroiApp\\AndroiApp\\AndroiApp\\AndroiApp.csproj",
+      "projectUniqueName": "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp\\AndroiApp.csproj",
       "projectName": "AndroiApp",
-      "projectPath": "C:\\lf2x6_remote_control\\AndroiApp\\AndroiApp\\AndroiApp\\AndroiApp.csproj",
+      "projectPath": "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp\\AndroiApp.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\lf2x6_remote_control\\AndroiApp\\AndroiApp\\AndroiApp\\obj\\",
+      "outputPath": "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Users\\USER\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",

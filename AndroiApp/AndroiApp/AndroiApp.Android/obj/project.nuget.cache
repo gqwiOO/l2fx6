@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c2F541f6ae6p9KxK8LBiL1SWh+R/q/sFnAnIMsEwFW6VkVseVy6dgSCQe9Z2h53IZsgjM7DF49uvuMpDhqE85A==",
+  "dgSpecHash": "v/+zD4Qha41hZzfQbjz9GtZzK5UtWyW2NnxcTd6WAekdD0aYWez6iFMKqhaEJvMXI4YrrsfGDrAMXrD2i12fLQ==",
   "success": true,
-  "projectFilePath": "C:\\lf2x6_remote_control\\AndroiApp\\AndroiApp\\AndroiApp.Android\\AndroiApp.Android.csproj",
+  "projectFilePath": "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp.Android\\AndroiApp.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.data.sqlite\\7.0.13\\microsoft.data.sqlite.7.0.13.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.13\\microsoft.data.sqlite.core.7.0.13.nupkg.sha512",

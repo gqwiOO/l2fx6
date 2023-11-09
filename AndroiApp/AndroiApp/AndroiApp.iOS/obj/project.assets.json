@@ -1995,11 +1995,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\lf2x6_remote_control\\AndroiApp\\AndroiApp\\AndroiApp.iOS\\AndroiApp.iOS.csproj",
+      "projectUniqueName": "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp.iOS\\AndroiApp.iOS.csproj",
       "projectName": "AndroiApp.iOS",
-      "projectPath": "C:\\lf2x6_remote_control\\AndroiApp\\AndroiApp\\AndroiApp.iOS\\AndroiApp.iOS.csproj",
+      "projectPath": "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp.iOS\\AndroiApp.iOS.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\lf2x6_remote_control\\AndroiApp\\AndroiApp\\AndroiApp.iOS\\obj\\",
+      "outputPath": "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2022,8 +2022,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\lf2x6_remote_control\\AndroiApp\\AndroiApp\\AndroiApp\\AndroiApp.csproj": {
-              "projectPath": "C:\\lf2x6_remote_control\\AndroiApp\\AndroiApp\\AndroiApp\\AndroiApp.csproj"
+            "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp\\AndroiApp.csproj": {
+              "projectPath": "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp\\AndroiApp.csproj"
             }
           }
         }

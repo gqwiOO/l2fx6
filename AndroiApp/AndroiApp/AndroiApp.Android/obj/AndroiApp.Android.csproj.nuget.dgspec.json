@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\lf2x6_remote_control\\AndroiApp\\AndroiApp\\AndroiApp.Android\\AndroiApp.Android.csproj": {}
+    "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp.Android\\AndroiApp.Android.csproj": {}
   },
   "projects": {
-    "C:\\lf2x6_remote_control\\AndroiApp\\AndroiApp\\AndroiApp.Android\\AndroiApp.Android.csproj": {
+    "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp.Android\\AndroiApp.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\lf2x6_remote_control\\AndroiApp\\AndroiApp\\AndroiApp.Android\\AndroiApp.Android.csproj",
+        "projectUniqueName": "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp.Android\\AndroiApp.Android.csproj",
         "projectName": "AndroiApp.Android",
-        "projectPath": "C:\\lf2x6_remote_control\\AndroiApp\\AndroiApp\\AndroiApp.Android\\AndroiApp.Android.csproj",
+        "projectPath": "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp.Android\\AndroiApp.Android.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\lf2x6_remote_control\\AndroiApp\\AndroiApp\\AndroiApp.Android\\obj\\",
+        "outputPath": "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -34,8 +34,8 @@
         "frameworks": {
           "monoandroid13.0": {
             "projectReferences": {
-              "C:\\lf2x6_remote_control\\AndroiApp\\AndroiApp\\AndroiApp\\AndroiApp.csproj": {
-                "projectPath": "C:\\lf2x6_remote_control\\AndroiApp\\AndroiApp\\AndroiApp\\AndroiApp.csproj"
+              "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp\\AndroiApp.csproj": {
+                "projectPath": "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp\\AndroiApp.csproj"
               }
             }
           }
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\lf2x6_remote_control\\AndroiApp\\AndroiApp\\AndroiApp\\AndroiApp.csproj": {
+    "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp\\AndroiApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\lf2x6_remote_control\\AndroiApp\\AndroiApp\\AndroiApp\\AndroiApp.csproj",
+        "projectUniqueName": "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp\\AndroiApp.csproj",
         "projectName": "AndroiApp",
-        "projectPath": "C:\\lf2x6_remote_control\\AndroiApp\\AndroiApp\\AndroiApp\\AndroiApp.csproj",
+        "projectPath": "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp\\AndroiApp.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\lf2x6_remote_control\\AndroiApp\\AndroiApp\\AndroiApp\\obj\\",
+        "outputPath": "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Users\\USER\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
