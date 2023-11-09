@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AndroiApp.Views.notConnectedToDevicePage"
+             BackgroundColor="#47476b">
+    <ContentPage.Content>
+        <StackLayout Padding="5,5,5,5">
+            <Button Margin="0,0,0,0" 
+                    BackgroundColor="{x:DynamicResource buttonBGColor}"
+                    Text="Settings"
+                    FontSize="11"
+                    TextColor="White"
+                    Padding="0,0,0,0"
+                    HorizontalOptions="End"
+                    Clicked="settingsButton"
+                    />
+            <Label Text="You are not connected to any device" 
+                HorizontalOptions="CenterAndExpand"
+                TextColor="Black"
+                FontSize="18"
+                Padding="10,10,10,10"
+                HorizontalTextAlignment="Center"/>
+            <Button Text="Send message" Clicked="sendMessage"/>
+
+            <Button Text="Connect"
+                    Clicked="connectToDeviceButton"
+                    VerticalOptions="EndAndExpand"
+                    Padding="20,20,20,20"
+                    BackgroundColor="{x:DynamicResource buttonBGColor}"
+                    TextColor="White"
+                    Margin="50,0,50,10"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AndroiApp.Views.SettingsPage"
+             BackgroundColor="#47476b"
+             >
+             
+
+    <StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <ImageButton Source="BackButton.png" Clicked="BackButton"
+                HorizontalOptions="Start" BackgroundColor="{x:DynamicResource buttonBGColor}"
+                Margin="0"/>
+            <Label x:Name="phoneModel" BackgroundColor="{x:DynamicResource backgroundColor}" 
+                   WidthRequest="100"
+                   Padding="0,0,0,0"
+                   Margin="0">
+            </Label>
+            <Label x:Name="IP" BackgroundColor="{x:DynamicResource backgroundColor}"/>
+        </StackLayout>
+        
+        
+    </StackLayout>
+
+</ContentPage>
