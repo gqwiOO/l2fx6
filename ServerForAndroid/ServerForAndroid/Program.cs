@@ -18,13 +18,16 @@ namespace ServerForAndroid
     /// Need to create another class for using static functions like checking response
     /// if its sqlite3 format or JSON and others.
     /// </summary>
-    internal class MyServer
+    public class MyServer
     {
         UdpClient udpClient = new UdpClient();
 
         /// <summary>
         /// It's a bad idea, after checking response program should every time gives this var value null
         /// </summary>
+        /// 
+
+
         
         public byte[] lastResponse = null;
         private const string databaseFilePath = "dataBase.sqlite3";
@@ -40,20 +43,24 @@ namespace ServerForAndroid
             {
                 { "time", "9/19/2016 12:00:00 AM"},
                 { "ip_sender", "192.168.0.100"},
-                {"ip_receiver", "192.168.0.101" },
+                {"ip_receiver", $"{IP}" },
                 { "response", $"{response}" }
             };
-            Console.WriteLine(jsonDictionaryResponse["response"] + " response");
-            jsonDictionaryResponse["ip_sender"] = "a";
-            //jsonDictionaryResponse["response"] = response;
-            jsonDictionaryResponse["ip_receiver"] = IP;
-
             string JSONDictionaryInString = JsonConvert.SerializeObject(jsonDictionaryResponse);
 
             byte[] dictionaryInBytes = Encoding.UTF8.GetBytes(JSONDictionaryInString);
 
-            await udpClient.SendAsync(dictionaryInBytes, dictionaryInBytes.Length, new IPEndPoint(IPAddress.Parse(IP), 6666));
+            await udpClient.SendAsync(dictionaryInBytes,
+                                      dictionaryInBytes.Length, new IPEndPoint(IPAddress.Parse(IP), 6666));
 
+        }
+
+        public void saveResponseToFile(byte[] response)
+        {
+
+            FileStream fs = File.Create("response.json");
+            fs.Write(response, 0, response.Length);
+            fs.Close();
         }
 
         public static Dictionary<string, string> getJsonDictionaryFromBytes(byte[] bytes)
@@ -74,14 +81,10 @@ namespace ServerForAndroid
             /// Takes first 16 bytes of array and convert it into string. This bytes contains file format
             /// if it's sqlite3.
             ///
-            byte[] bytesWithFileFormat = new byte[16];
-            for(int index = 0; index < 16; index++)
-            {
-                bytesWithFileFormat[index] = bytes[index];
-            }
-            /// Does not return true if string equals value here |
-            ///                                                  v
-            return Encoding.UTF8.GetString(bytesWithFileFormat) == "SQLite format 3 ";
+            byte[] bytesWithFileFormat = new byte[15];
+            for(int index = 0; index < 15; index++) bytesWithFileFormat[index] = bytes[index];
+
+            return Encoding.UTF8.GetString(bytesWithFileFormat) == "SQLite format 3";
         }
         public static bool isResponseJSONFormat(byte[] bytes)
         {
@@ -93,8 +96,7 @@ namespace ServerForAndroid
             }
 
             strInput = strInput.Trim();
-            if ((strInput.StartsWith("{") && strInput.EndsWith("}")) || //For object
-                (strInput.StartsWith("[") && strInput.EndsWith("]"))) //For array
+            if ((strInput.StartsWith("{") && strInput.EndsWith("}"))) //For array
             {
                 try
                 {
@@ -168,7 +170,7 @@ namespace ServerForAndroid
                 UdpReceiveResult response = await udpClient.ReceiveAsync();
                 if (response != null)
                 {
-                    lastResponse = response.Buffer;
+                    saveResponseToFile(response.Buffer);
                 }
             }
             catch (Exception e)
@@ -179,38 +181,31 @@ namespace ServerForAndroid
         }
     }
 
+    public class Response
+    {
+        public DateTime time;
+        public string ip_receiver { get; set; }
+        public string ip_sender { get; set; }
+        public string response { get; set; }
+    }
+
     internal class Program
     {
         static void Main(string[] args)
         {
+
             MyServer server = new MyServer();
-
-            /// Need to relocate this variable into MyServer Class.
-            Dictionary<string, string> responseDictionary;
-
-
-            if(File.Exists($"dataBase.sqlite3"))
-            {
-                Console.WriteLine("Exists!");
-                server.GetDictionaryFunctionsFromDatabase();
-                Console.WriteLine(server.functionsFromDatabase["play dota"]);
-                server.sendResponse($"{server.functionsFromDatabase["play dota"]}", "192.168.0.101");
-
-
-            }
+            server.sendResponse("ahahah", "192.168.0.101");
 
             while (true)
             {
                 server.receiveResponse();
 
-                Console.WriteLine(server.lastResponse == null);
                 if (server.lastResponse != null)
                 {
                     if (MyServer.isResponseJSONFormat(server.lastResponse))
                     {
                         Console.WriteLine("This response consist a json format!");
-                        responseDictionary = MyServer.getJsonDictionaryFromBytes(server.lastResponse);
-                        Console.WriteLine(responseDictionary["time"]);
                         server.lastResponse = null;
                     }
 

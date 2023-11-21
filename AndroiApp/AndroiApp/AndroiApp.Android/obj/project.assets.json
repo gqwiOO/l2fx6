@@ -3804,26 +3804,23 @@
   },
   "packageFolders": {
     "C:\\Users\\USER\\.nuget\\packages\\": {},
-    "C:\\Users\\USER\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp.Android\\AndroiApp.Android.csproj",
+      "projectUniqueName": "D:\\l2fx6\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp.Android\\AndroiApp.Android.csproj",
       "projectName": "AndroiApp.Android",
-      "projectPath": "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp.Android\\AndroiApp.Android.csproj",
+      "projectPath": "D:\\l2fx6\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp.Android\\AndroiApp.Android.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp.Android\\obj\\",
+      "outputPath": "D:\\l2fx6\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Users\\USER\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\config\\Godot.Offline.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3837,8 +3834,8 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp\\AndroiApp.csproj": {
-              "projectPath": "C:\\lf2x6_remote_control\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp\\AndroiApp.csproj"
+            "D:\\l2fx6\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp\\AndroiApp.csproj": {
+              "projectPath": "D:\\l2fx6\\l2fx6\\AndroiApp\\AndroiApp\\AndroiApp\\AndroiApp.csproj"
             }
           }
         }
@@ -3851,6 +3848,14 @@
             "target": "Package",
             "version": "[7.0.13, )"
           },
+          "Microsoft.Data.Sqlite": {
+            "target": "Package",
+            "version": "[7.0.13, )"
+          },
+          "SQLitePCLRaw.bundle_winsqlite3": {
+            "target": "Package",
+            "version": "[2.1.6, )"
+          },
           "SQLitePCLRaw.bundle_winsqlite3": {
             "target": "Package",
             "version": "[2.1.6, )"
@@ -3858,6 +3863,14 @@
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.7.0, )"
+          },
+          "Xamarin.Essentials": {
+            "target": "Package",
+            "version": "[1.7.0, )"
+          },
+          "Xamarin.Forms": {
+            "target": "Package",
+            "version": "[5.0.0.2196, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
